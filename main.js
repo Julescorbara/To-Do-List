@@ -10,7 +10,7 @@ console.log(taskList)
 taskList.forEach(item => add_task(item.name,  true, item.isdone )); //on rajoute la tache)
 
 function add_task(TaskName, imported = false, checked = false ){
-    let TaskFullText = ""
+    let TaskFullText
     if(checked === true){
         TaskFullText =
             '<li>\n' +
